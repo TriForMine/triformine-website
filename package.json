@@ -4,12 +4,32 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.8",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "@ant-design/icons": "^4.5.0",
+    "@next/bundle-analyzer": "^10.0.8",
+    "antd": "^4.13.1",
+    "axios": "^0.21.1",
+    "babel-plugin-import": "^1.13.3",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.10.4",
+    "esm": "^3.2.25",
+    "next": "latest",
+    "next-seo": "^4.20.0",
+    "postcss-preset-env": "^6.7.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "swr": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.33",
+    "@types/react": "^17.0.3",
+    "typescript": "^4.2.3"
+  },
+  "browser": {
+    "fs": false,
+    "path": false
   }
 }
