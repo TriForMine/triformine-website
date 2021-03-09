@@ -2,8 +2,9 @@ import {Button, Result} from "antd";
 import {NextSeo} from "next-seo";
 import Link from "next/link";
 import React from "react";
+import {NextPage} from "next";
 
-function Error({ statusCode }) {
+const Error: NextPage<{ statusCode?: number }> = ({ statusCode }) => {
     return (
         <p>
             {statusCode
